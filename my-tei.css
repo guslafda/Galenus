@@ -1,0 +1,46 @@
+@import url("https://www.tei-c.org/release/xml/tei/stylesheet/tei.css");
+
+span.flourished-initial {
+    font-family: Georgia, serif;
+    font-size: 3.5em;
+    color: #795c43;
+    line-height: 0.85;
+    vertical-align: baseline;
+}
+
+span.abbr {
+    display: none;
+}
+
+/* Display the abbreviation. */
+span.abbr {
+    display: inline;
+    cursor: help;
+}
+
+/* Hide the expansion until the abbreviation is hovered. */
+span.abbr + span.expan {
+    display: none;
+}
+
+span.abbr:hover + span.expan {
+    display: inline;
+    margin-left: 0.3em;
+    padding: 0.1em 0.3em;
+    background: #fff4ce;
+}
+
+/* Remove decorative markers around supplied letters. */
+span.ex::before,
+span.ex::after {
+    content: none;
+}
+
+div.pagebreak,
+span.pagebreak {
+    float: none;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    left: 28em;
+}

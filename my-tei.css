@@ -71,3 +71,13 @@ span.ex::after {
         grid-template-columns: minmax(0, 1fr);
     }
 }
+
+.manuscript-image {
+    margin: 1rem 0 0;
+}
+
+.manuscript-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
